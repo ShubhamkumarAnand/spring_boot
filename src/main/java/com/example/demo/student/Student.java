@@ -13,7 +13,7 @@ public class Student {
             allocationSize = 1
     )
 
-    @SequenceGenerator(
+    @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
             generator="student_sequence"
     )
