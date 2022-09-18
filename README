@@ -1,3 +1,4 @@
 # The Spring Boot Application
 
 This repository contains the Spring Boot Application which can perform the CRUD operations.
+To Run this Application Locally you need to specify the postgres values in the resources/application.properties in the file.
