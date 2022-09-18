@@ -26,4 +26,12 @@ public class StudentService {
     public List<Student> getStudents() {
         return studentRepository.findAll();
     }
+
+    public void deleteStudent(Long studentId) {
+        boolean exists = studentRepository.existsById(studentId);
+        if(!exists){
+            throw new IllegalStateException("Student with the "+ studentId + " does not Exists");
+        }
+        studentRepository.deleteById(studentId);
+    }
 }
